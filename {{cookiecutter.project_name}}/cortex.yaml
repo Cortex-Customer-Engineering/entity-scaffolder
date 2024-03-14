@@ -1,10 +1,9 @@
 openapi: 3.0.1
 info:
   title: {{ cookiecutter['_@cortex_inputs']['service_details']['name'] }}
-  # description: {{ cookiecutter['_@cortex_inputs']['service_details']['description'] }}
-  description: {{ cookiecutter.description }}
+  description: {{ cookiecutter['_@cortex_inputs']['service_details']['description'] }}
   x-cortex-tag: {{ cookiecutter['_@cortex_inputs']['service_details']['tag'] }}
-  x-cortex-type: service
+  x-cortex-type: test
   x-cortex-slack:
     channels:
     - name: {{ cookiecutter.slack_channel_name }}
