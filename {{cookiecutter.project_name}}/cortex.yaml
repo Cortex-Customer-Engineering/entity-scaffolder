@@ -11,6 +11,7 @@ info:
   x-cortex-git:
     github:
       repository: {{ cookiecutter['_@cortex_inputs']['git']['repository']['org'] }}/{{ cookiecutter['_@cortex_inputs']['git']['repository']['repoName'] }}
+      alias: default
   x-cortex-oncall:
     pagerduty:
       id: {{ cookiecutter.pagerduty_id }}
