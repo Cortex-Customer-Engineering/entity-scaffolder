@@ -4,6 +4,7 @@
   "pagerduty_id": 0,
   "pagerduty_type": ["SCHEDULE","SERVICE", "ESCALATION_POLICY"],
   "slack_channel_name": "Channel Name",
+  "test": "test",
   "_cortex_field_configurations": {
     "pagerduty_type": {
       "use_default": true
