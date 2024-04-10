@@ -1,5 +1,5 @@
 {
-  "project_name": "",
+  "service_name": "",
   "version": "0.1.2",
   "pagerduty_id": 0,
   "pagerduty_type": ["SCHEDULE","SERVICE", "ESCALATION_POLICY"],
