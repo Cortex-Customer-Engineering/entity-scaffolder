@@ -1,6 +1,7 @@
 {
   "project_name": "",
   "version": "0.1.2",
+  "entity-type": ["service", "resource", "api"], 
   "pagerduty_id": 0,
   "pagerduty_type": ["SCHEDULE","SERVICE", "ESCALATION_POLICY"],
   "slack_channel_name": ""
