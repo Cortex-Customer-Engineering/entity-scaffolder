@@ -1,1 +1,18 @@
-test
+openapi: 3.0.1
+info:
+  title: {{ cookiecutter['_@cortex_inputs']['service_details']['name'] }}
+  description: {{ cookiecutter['_@cortex_inputs']['service_details']['description'] }}
+  x-cortex-tag: {{ cookiecutter['_@cortex_inputs']['service_details']['tag'] }}
+  x-cortex-type: {{ cookiecutter.entity_type }}
+  x-cortex-slack:
+    channels:
+    - name: {{ cookiecutter.slack_channel_name }}
+      notificationsEnabled: true
+  x-cortex-git:
+    github:
+      repository: {{ cookiecutter['_@cortex_inputs']['git']['repository']['org'] }}/{{ cookiecutter['_@cortex_inputs']['git']['repository']['repoName'] }}
+      alias: default
+  x-cortex-oncall:
+    pagerduty:
+      id: {{ cookiecutter.pagerduty_id }}
+      type: {{ cookiecutter.pagerduty_type }}
