@@ -16,3 +16,7 @@ info:
     pagerduty:
       id: {{ cookiecutter.pagerduty_id }}
       type: {{ cookiecutter.pagerduty_type }}
+   x-cortex-owners:
+    - type: group
+      name: {{ cookiecutter['_@cortex_inputs']['service_details']['owners'][0]['name'] }}
+      provider: CORTEX
