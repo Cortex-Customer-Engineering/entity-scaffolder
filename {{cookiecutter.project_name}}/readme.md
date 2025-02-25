@@ -1,1 +1,1 @@
-Here is the new project: {{ cookiecutter.project_name }}
+{{ cookiecutter.project_name }} is a {{ cookiecutter.entity_type }} created by Scaffolder in Cortex.
